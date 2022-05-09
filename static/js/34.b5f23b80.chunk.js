@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksprwt_presets=self.webpackChunksprwt_presets||[]).push([[34],{34:function(e,r,n){n.r(r),n.d(r,{Header:function(){return c}});n(791);var s=n(504),t=n(761),u=n(184),c=function(){return(0,u.jsx)(t.k,{role:"banner",Tag:"header",children:(0,u.jsx)(s.rU,{to:"/",children:"Logo"})})}}}]);
+//# sourceMappingURL=34.b5f23b80.chunk.js.map
