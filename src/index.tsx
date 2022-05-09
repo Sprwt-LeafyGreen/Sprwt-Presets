@@ -1,6 +1,6 @@
 import { enableAllPlugins } from 'immer';
 import React, { StrictMode } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './assets/scss/index.scss';
 import { App } from './components/App/App';
 import { ErrorBoundary } from './components/ErrorBoundary/ErrorBoundary';
@@ -16,11 +16,12 @@ reportWebVitals();
 // below. Note this comes with some pitfalls. Learn more about service workers: https://cra.link/PWA
 serviceWorkerRegistration.register();
 
-ReactDOM.render(
+// Exclamation point fixese the "null not allowed" error... looks like it forces it to not be null, i.e. we know it'll never be null
+const Root = ReactDOM.createRoot(document.getElementById('app')!);
+Root.render(
   <StrictMode>
     <ErrorBoundary>
       <App />
     </ErrorBoundary>
-  </StrictMode>,
-  document.getElementById('app')
+  </StrictMode>
 );
