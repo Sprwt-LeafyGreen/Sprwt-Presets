@@ -69,7 +69,7 @@ export const Home = (): JSX.Element => {
           href="/#seed"
           onClick={(e) => {
             e.preventDefault();
-            setState((s: any) => ({ ...setState, plan: 'seed' }));
+            setState((s: any) => ({ ...s, plan: 'seed' }));
           }}
         >
           Seed
@@ -78,7 +78,7 @@ export const Home = (): JSX.Element => {
           href="/#sprwt"
           onClick={(e) => {
             e.preventDefault();
-            setState((s: any) => ({ ...setState, plan: 'sprwt' }));
+            setState((s: any) => ({ ...s, plan: 'sprwt' }));
           }}
         >
           Sprwt
@@ -87,7 +87,7 @@ export const Home = (): JSX.Element => {
           href="/#bloom"
           onClick={(e) => {
             e.preventDefault();
-            setState((s: any) => ({ ...setState, plan: 'bloom' }));
+            setState((s: any) => ({ ...s, plan: 'bloom' }));
           }}
         >
           Bloom
@@ -96,7 +96,7 @@ export const Home = (): JSX.Element => {
           href="/#orchard"
           onClick={(e) => {
             e.preventDefault();
-            setState((s: any) => ({ ...setState, plan: 'orchard' }));
+            setState((s: any) => ({ ...s, plan: 'orchard' }));
           }}
         >
           Orchard
